@@ -1,0 +1,637 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="bootstrap.min.css">
+<script src="jquery.min.js"></script>
+<script src="bootstrap.min.js"></script>
+<link rel="stylesheet" href="8thurl.css">
+<link rel="stylesheet" href="form.css">
+<title>Find Your Nearest ELS Counselor-ELS</title>
+<link rel="icon" href="title_logo.jpg">
+
+
+ 
+	<script>
+				 function resizeHeaderOnScroll() {
+  const distanceY = window.pageYOffset || document.documentElement.scrollTop,
+  shrinkOn = 50,
+  headerEl = document.getElementById('header');
+  
+  if (distanceY > shrinkOn) {
+    headerEl.classList.add("smaller");
+  } else {
+    headerEl.classList.remove("smaller");
+  }
+}
+
+window.addEventListener('scroll', resizeHeaderOnScroll);
+				
+		function myFunction(y){
+			var x=document.getElementById("headerdiv");
+			
+			if (x.style.display === "block"){
+				x.style.display = "none";
+				  y.classList.toggle("change");
+			}
+			
+			else{
+				x.style.display = "block";
+				  y.classList.toggle("change");
+			}
+		}
+		   
+
+				</script>
+		</head>
+		<body>
+			<!-- header section -->
+			<header id="header">
+				<a href="https://www.els.edu">
+				<img src="els-logo.png" id="logo" alt="ELS_LOGO">
+				</a>
+			
+				<a onclick="myFunction(this)"  class="toggle"><p id="men">MENU</p><div class="toggle cross">
+					  <div class="bar1"></div>
+					  <div class="bar2"></div>
+					  <div class="bar3"></div>
+</div></a>
+				
+			<nav id="headerdiv">
+				
+				<div class="lang_els_search_container menu" id="menu">
+					
+					
+					<div class="dropdown" id="lang">
+						  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" id="langbtn">
+							Select a language<sub><span class="caret"></span></sub></button>
+							<ul class="dropdown-menu" id="lang-menu"> 
+									<li><a href="https://www.els.edu/ar/els-counselor-services" class="language">عربية</a></li>
+									<li><a href="https://www.els.edu/zh-cn/contact-a-els-counselor"  class="language">中文(中华人民共和国)</a></li>
+									<li><a href="https://www.els.edu/zh-tw/els-counselor-services"  class="language">中文(台灣)</a></li>
+									<li><a href="https://www.els.edu/en-gb/els-services">English (United Kingdom)</a></li>
+									 <li><a href="https://www.els.edu/fr/els-counselor-services">fran&#231;ais</a></li>
+								   <li><a href="https://www.els.edu/de/els-counselor-services">Deutsch</a></li>
+								  <li> <a href="https://www.els.edu/ja/els-counselor-services">日本語</a></li>
+									<li><a href="https://www.els.edu/ko/els-counselor-services">한국어</a></li>
+									<li><a href="https://www.els.edu/pt/els-super-service">portugu&#234;s</a></li>
+								   <li><a href="https://www.els.edu/ru/els-konsultant">русский</a></li>
+								   <li><a href="https://www.els.edu/es/super-service-els">espa&#241;ol</a></li>
+									<li><a href="https://www.els.edu/th/els-counselor-services">ไทย</a></li>
+									<li><a href="https://www.els.edu/tr/amerika-egitim-danismanligi-els-iletisim">T&#252;rk&#231;e</a></li>
+									<li><a href="https://www.els.edu/vi/tim-tu-van-vien-els">Ti&#234;́ng Việt</a></li>
+									<li><a href="https://www.els.edu/en/els-counselor-services">English</a></li>
+					
+							 
+						</ul>
+					  </div>
+					  
+					<div id="myels_link">
+					<a href="https://www.els.edu/MyELS/Login">MyELS</a><span class="contact_icon" ><img src="myels.png" alt="elscontact_icon"></span></div>
+					
+					<div class="search_container">
+					<input type="search" name="search" id="search">
+					</div>
+					
+				</div>
+				
+					
+					
+			
+			
+			<nav id="dest">
+				<ul class=" navbar-nav ">
+					<li class="dropdown " id="dropdown"> 
+						  <button class="btn btn-primary dropdown-toggle arrow" type="button" data-toggle="dropdown" id="destbtn">
+							  Destinations &amp; Centers</button>
+							<ul class="dropdown-menu" id="destbtn-menu"> 
+								  <li><a href="https://www.els.edu/en/Find-ELS-Language-Centers">Destinations &amp; Centers</a></li>
+								  <li><a href="https://www.els.edu/en/Find-ELS-Language-Centers?country=US">United States</a></li>
+								  <li><a href="https://www.els.edu/en/Find-ELS-Language-Centers?country=AUS">Australia</a></li>
+								  <li><a href="https://www.els.edu/en/Find-ELS-Language-Centers?country=CA">Canada</a></li>
+								  <li><a href="https://www.els.cn" target=_blank>China</a></li>
+								  <li><a href="https://www.els.edu/en/Find-ELS-Language-Centers?country=IN">India</a></li>
+								  <li><a href="https://www.els.edu.my" target=_blank>Malaysia</a></li>
+								  <li><a href="https://www.els.edu/en/LandingPage/Additional-Locations">Additional Locations</a></li>
+							 </ul> 
+						
+					</li>
+			
+					<li class="dropdown arrow">
+						  <button class="btn btn-primary dropdown-toggle arrow" type="button" data-toggle="dropdown" id="engbtn">
+							  English Programs</button>
+							<ul class="dropdown-menu" id="engbtn-menu">
+								  <li><a href="https://www.els.edu/en/Study-English-for-International-Students">English Programs</a></li>
+								  <li><a href="https://www.els.edu/en/Study-English-for-International-Students/Academic-English-Programs">Acadamic English</a></li>
+								  <li><a href="https://www.els.edu/en/Study-English-for-International-Students/General-English-Programs">General English</a></li>
+								  <li><a href="https://www.els.edu/en/Study-English-for-International-Students/Vacation-English-Programs">Vacation English Programs</a></li>
+								  <li> <a href="https://www.els.edu/en/Study-English-for-International-Students/Intensive-Business-English-Program">Business Communication</a></li>
+								  <li><a href="https://www.els.edu/en/Study-English-for-International-Students/English-Language-Summer-Camp">Youth Programs</a></li>
+								  <li> <a href="https://www.els.edu/en/Study-English-for-International-Students/Testing-and-Test-Preparation">Testing and Test Preparation <br>Programs</a></li>
+							</ul>
+						
+					</li>
+					
+					<li class="dest-links"><a href="https://www.els.edu/en/ELS-University-Partner">Partner Universities</a></li>
+					<li class="dest-links" id="dest-link"><a href="https://www.els.edu/en/About-Us">About ELS</a></li>
+				</ul>
+				
+				</nav>
+				
+		</nav>
+		<!-- navigation bar -->
+				 <div id="links">
+                <ul id="link">
+                    <li><a href="https://www.els.edu/en/About-Us/Ask-A-Question">ASK A QUESTION</a></li>
+                    <li><a href="#">CONTACT A COUNSELOR</a></li>
+                    <li id="apply"><a href="https://www.els.edu/en/ELS-Application-Form">APPLY</a></li>
+                </ul>
+            </div>
+		  </header>
+<section id="section">
+		<div id= "main" >
+		<div id="part">
+			<p id="borde"></p>
+		<p id="help">we are here to help!</p>
+		
+		
+		
+		<p id="world">For over 55 years, ELS has helped more than 1,200,000 students from 143 countries around the world learn English.</p>
+</div>
+</div>
+</section>
+<div id="navigation">
+<div id="navigationlinks">
+<a href="">OVER VIEW</a>
+<a href="" id="select">ASK A QUESTION</a>
+<a href="">CAREERS</a>
+<a href="">NEWS</a>
+<a href="">PRESS</a>
+</div>
+</div>
+
+
+<div id="selectbox">
+<select name="ask a question">
+<option value="Ask A Question">Ask A Question</option>
+<option value="over view">Over view</option>
+<option value="careers">Careers</option>
+<option value="news">News</option>
+<option value="press">Press</option>
+</select>
+</div>
+<section>
+<div>
+<h1 id="comment"><b>Do you have a question or comment?</b></h1>
+<p id="complete">Complete the form below.<p>
+</div>
+		
+		<form id="form2">
+			<div class="tablerow">
+			<div class="tablecell res">
+			<label><span class="star">*</span> First Name</label><br>
+			<input type="text" name="first name">
+			</div>
+			<div class="tablecell">
+			<label><span class="star">*</span> Last Name/Family Name</label><br>
+			<input type="email" name="last name/family name">
+			</div>
+			</div>
+			<div class="tablerow">
+			<label><span class="star">*</span> Email</label><br>
+			<input type="email" name="email">
+			</div>
+<div class="tablerow">
+<label><span class="star">*</span> Phone Number/Mobile Number</label><br>
+			<input type="tel" name="mobile number">
+			</div>
+		<div class="tablerow">
+			<label><span class="star">*</span>  Country Of Residence</label><br>
+			<select   name="countries" class="options course">
+				<option value="">&nbsp;</option>
+			<option value="aruba">Aruba</option>
+			<option value="antigua">Antigua and Barbuda</option>
+			<option value="united arab">United Arab Emirates</option>
+			<option value="afghanistan">Afghanistan</option>
+			<option value="algeria">Azerbaijan</option>
+			<option value="albania">Albania</option>
+			<option value="armenia">Armenia</option>
+			<option value="andorra">Andorra</option>
+			<option value="angola">Angola</option>
+			<option value="argentina">Argentina</option>
+			<option value="australia">Australia</option>
+			<option value="ashmore and cartier">Ashmore And Cartier Is</option>
+			<option value="austria">Austria</option>
+			<option value="australia">Australia</option>
+			<option value="AV">Anguilla</option>
+		<option value="BA">Bahrain</option>
+		<option value="BB">Barbados</option>
+		<option value="BC">Botswana</option>
+		<option value="BD">Bermuda</option>
+		<option value="BE">Belgium</option>
+		<option value="BF">Bahamas The</option>
+		<option value="BG">Bangladesh</option>
+		<option value="BH">Belize</option>
+<option value="BK">Bosnia and Herzegovina</option>
+<option value="BL">Bolivia</option>
+<option value="BM">Burma</option>
+<option value="BN">Benin</option>
+<option value="BO">Belarus</option>
+<option value="BP">Solomon Islands</option>
+<option value="BR">Brazil</option>
+<option value="BS">Bassas Da India</option>
+<option value="BT">Bhutan</option>
+<option value="BU">Bulgaria</option>
+<option value="BV">Bouvet Island</option>
+<option value="BX">Brunei</option>
+<option value="BY">Burundi</option>
+<option value="CA">Canada</option>
+<option value="CB">Cambodia</option>
+<option value="CD">Chad</option>
+<option value="CE">Sri Lanka</option>
+<option value="CF">Congo</option>
+<option value="CG">Congo Dem Rep Of The</option>
+<option value="CH">China</option>
+<option value="CI">Chile</option>
+<option value="CJ">Cayman Islands</option>
+<option value="CK">Cocos (Keeling) Islands</option>
+<option value="CM">Cameroon</option>
+<option value="CN">Comoros</option>
+<option value="CO">Colombia</option>
+<option value="CR">Coral Sea Islands</option>
+<option value="CS">Costa Rica</option>
+<option value="CT">Central African Republic</option>
+<option value="CU">Cuba</option>
+<option value="CV">Cape Verde</option>
+<option value="CW">Cook Islands</option>
+<option value="CY">Cyprus</option>
+<option value="DA">Denmark</option>
+<option value="DJ">Djibouti</option>
+<option value="DO">Dominica</option>
+<option value="DR">Dominican Republic</option>
+<option value="EC">Ecuador</option>
+<option value="EG">Egypt</option>
+<option value="EI">Ireland</option>
+<option value="EK">Equatorial Guinea</option>
+<option value="EN">Estonia</option>
+<option value="ER">Eritrea</option>
+<option value="ES">El Salvador</option>
+<option value="ET">Ethiopia</option>
+<option value="EU">Europa Island</option>
+<option value="EZ">Czech Republic</option>
+<option value="FG">French Guiana</option>
+<option value="FI">Finland</option>
+<option value="FJ">Fiji</option>
+<option value="FK">Falkland Isl (Malvinas)</option>
+<option value="FM">Micronesia Fed States Of</option>
+<option value="FO">Faroe Islands</option>
+<option value="FP">French Polynesia</option>
+<option value="FR">France</option>
+<option value="FS">French S And Ant Lands</option>
+<option value="GA">Gambia The</option>
+<option value="GB">Gabon</option>
+<option value="GG">Georgia</option>
+<option value="GH">Ghana</option>
+<option value="GI">Gibraltar</option>
+<option value="GJ">Grenada</option>
+<option value="GK">Guernsey</option>
+<option value="GL">Greenland</option>
+<option value="GM">Germany</option>
+<option value="GO">Glorioso Islands</option>
+<option value="GP">Guadeloupe</option>
+<option value="GR">Greece</option>
+<option value="GT">Guatemala</option>
+<option value="GV">Guinea</option>
+<option value="GY">Guyana</option>
+<option value="GZ">Gaza Strip</option>
+<option value="HA">Haiti</option>
+<option value="HK">Hong Kong</option>
+<option value="HM">Heard Is &amp; Mcdonald Slands</option>
+<option value="HO">Honduras</option>
+<option value="HR">Croatia</option>
+<option value="HU">Hungary</option>
+<option value="IC">Iceland</option>
+<option value="ID">Indonesia</option>
+<option value="IM">Isle Of Man</option>
+<option value="IN">India</option>
+<option value="IO">British Indian Ocean Ter</option>
+<option value="IP">Clipperton Island</option>
+<option value="IR">Iran</option>
+<option value="IS">Israel</option>
+<option value="IT">Italy</option>
+<option value="IV">Cote D Ivoire</option>
+<option value="IZ">Iraq</option>
+<option value="JA">Japan</option>
+<option value="JE">Jersey</option>
+<option value="JM">Jamaica</option>
+<option value="JN">Jan Mayen</option>
+<option value="JO">Jordan</option>
+<option value="JU">Juan De Nova Island</option>
+<option value="KE">Kenya</option>
+<option value="KG">Kyrgyzstan</option>
+<option value="KN">North Korea</option>
+<option value="KR">Kiribati</option>
+<option value="KS">South Korea</option>
+<option value="KT">Christmas Island</option>
+<option value="KU">Kuwait</option>
+<option value="KV">Kosovo</option>
+<option value="KZ">Kazakhstan</option>
+<option value="LA">Laos</option>
+<option value="LE">Lebanon</option>
+<option value="LG">Latvia</option>
+<option value="LH">Lithuania</option>
+<option value="LI">Liberia</option>
+<option value="LO">Slovakia</option>
+<option value="LS">Liechtenstein</option>
+<option value="LT">Lesotho</option>
+<option value="LU">Luxembourg</option>
+<option value="LY">Libya</option>
+<option value="MA">Madagascar</option>
+<option value="MB">Martinique</option>
+<option value="MC">Macau</option>
+<option value="MD">Moldova</option>
+<option value="MF">Mayotte</option>
+<option value="MG">Mongolia</option>
+<option value="MH">Montserrat</option>
+<option value="MI">Malawi</option>
+<option value="MK">Macedonia</option>
+<option value="ML">Mali</option>
+<option value="MN">Monaco</option>
+<option value="MO">Morocco</option>
+<option value="MP">Mauritius</option>
+<option value="MR">Mauritania</option>
+<option value="MT">Malta</option>
+<option value="MU">Oman</option>
+<option value="MV">Maldives</option>
+<option value="MW">Montenegro</option>
+<option value="MX">Mexico</option>
+<option value="MY">Malaysia</option>
+<option value="MZ">Mozambique</option>
+<option value="NC">New Caledonia</option>
+<option value="NE">Niue</option>
+<option value="NF">Norfolk Island</option>
+<option value="NG">Niger</option>
+<option value="NH">Vanuatu</option>
+<option value="NI">Nigeria</option>
+<option value="NL">Netherlands</option>
+<option value="NO">Norway</option>
+<option value="NP">Nepal</option>
+<option value="NR">Nauru</option>
+<option value="NS">Suriname</option>
+<option value="NU">Nicaragua</option>
+<option value="NZ">New Zealand</option>
+<option value="PA">Paraguay</option>
+<option value="PC">Pitcairn Islands</option>
+<option value="PE">Peru</option>
+<option value="PF">Paracel Islands</option>
+<option value="PG">Spratly Islands</option>
+<option value="PK">Pakistan</option>
+<option value="PL">Poland</option>
+<option value="PM">Panama</option>
+<option value="PO">Portugal</option>
+<option value="PP">Papua New Guinea</option>
+<option value="PS">Palau</option>
+<option value="PU">Guinea-Bissau</option>
+<option value="QA">Qatar</option>
+<option value="RE">Reunion</option>
+<option value="RM">Marshall Islands</option>
+<option value="RN">Saint Martin</option>
+<option value="RO">Romania</option>
+<option value="RP">Philippines</option>
+<option value="RQ">Puerto Rico</option>
+<option value="RS">Russia</option>
+<option value="RW">Rwanda</option>
+<option value="SA">Saudi Arabia</option>
+<option value="SB">Saint Pierre And Miquelon</option>
+<option value="SC">Saint Kitts And Nevis</option>
+<option value="SE">Seychelles</option>
+<option value="SF">South Africa</option>
+<option value="SG">Senegal</option>
+<option value="SH">Saint Helena</option>
+<option value="SI">Slovenia</option>
+<option value="SL">Sierra Leone</option>
+<option value="SM">San Marino</option>
+<option value="SN">Singapore</option>
+<option value="SO">Somalia</option>
+<option value="SP">Spain</option>
+<option value="SR">Serbia</option>
+<option value="ST">Saint Lucia</option>
+<option value="SU">Sudan</option>
+<option value="SV">Svalbard</option>
+<option value="SW">Sweden</option>
+<option value="SX">S Georgia &amp; S Sandwich</option>
+<option value="SY">Syria</option>
+<option value="SZ">Switzerland</option>
+<option value="TB">Saint Barthelemy</option>
+<option value="TD">Trinidad and Tobago</option>
+<option value="TE">Tromelin Island</option>
+<option value="TH">Thailand</option>
+<option value="TI">Tajikistan</option>
+<option value="TK">Turks and Caicos Islands</option>
+<option value="TL">Tokelau</option>
+<option value="TN">Tonga</option>
+<option value="TO">Togo</option>
+<option value="TP">Sao Tome and Principe</option>
+<option value="TS">Tunisia</option>
+<option value="TT">Timor-Leste</option>
+<option value="TU">Turkey</option>
+<option value="TV">Tuvalu</option>
+<option value="TW">Taiwan</option>
+<option value="TX">Turkmenistan</option>
+<option value="TZ">Tanzania</option>
+<option value="U2">Neutral Zone</option>
+<option value="U3">Stateless</option>
+<option value="UG">Uganda</option>
+<option value="UK">United Kingdom</option>
+<option value="UP">Ukraine</option>
+<option value="US">United States</option>
+<option value="UV">Burkina Faso</option>
+<option value="UY">Uruguay</option>
+<option value="UZ">Uzbekistan</option>
+<option value="VC">S Vincent &amp; The Grenadines</option>
+<option value="VE">Venezuela</option>
+<option value="VI">British Virgin Islands</option>
+<option value="VM">Vietnam</option>
+<option value="VT">Vatican City</option>
+<option value="WA">Namibia</option>
+<option value="WE">West Bank</option>
+<option value="WF">Wallis And Futuna</option>
+<option value="WI">Western Sahara</option>
+<option value="WS">Samoa</option>
+<option value="WZ">Swaziland</option>
+<option value="YM">Yemen</option>
+<option value="ZA">Zambia</option>
+<option value="ZI">Zimbabwe</option>
+
+			</select>
+</div>
+<div class="tablerow">
+<label><span class="star">*</span> Country of interest</label><br>
+<select   name="country of interest">
+				<option value="">&nbsp;</option>
+			<option value="Australia">Australia</option>
+			<option value="canada">Canada</option>
+			<option value="india">India</option>
+			<option value="united states">United States</option>	
+			</select>
+			</div>
+			<div class="tablerow">
+<label><span class="star">*</span> Center of interest</label><br>
+<select   name="center of interest">
+				<option value="">&nbsp;</option>
+</select>
+</div>
+
+<div class="tablerow">
+<label><span class="star">*</span> Year Born</label><br>
+			<input type="text" name="year born">
+		</div>
+		<div class="tablerow">
+<label>Gender</label><br>
+<input type="radio" name="gender" value="male" class="radio"><span class="text-big">Male</span><br>
+<input type="radio" name="gender" value="female" class="radio"><span class="text-big">Female</span><br>
+
+</div>
+<div class="tablerow">
+<label><span class="star">*</span> What do you need help with?</label><br>
+<select   name="need help">
+				<option value="">&nbsp;</option>
+<option value="general">General English Programs</option>
+<option value="academic">Academic English Programs</option>
+<option value="university">University Admissions</option>
+<option value="bcp">Business Communication Programs</option>
+<option value="yp">Youth Programs</option>
+<option value="how to apply">How to Apply</option>
+<option value="p and q">Prices and Quotes</option>
+<option value="admissions">Admissions</option>
+<option value="housing">Housing</option>
+<option value="visas">Visas</option>
+<option value="ielts">iELTS</option>
+<option value="toefl">ToEFL</option>
+<option value="new agent">New Agent</option>
+<option value="jobs">Jobs</option>
+<option value="other">Other</option>
+			</select>
+			</div>
+			<div class="tablerow">
+<label>Message</label><br>
+<input type="text" class="textarea">
+</div>
+
+<div class="tablerow" id="terms">
+<input type="checkbox" value="terms">I agree to the <a class="terms" href="">Terms of Use</a> and <a class="terms" href="">Privacy Policy</a>
+</div>
+
+<button id="submit" value="submit">SUBMIT</button>
+
+			
+			</form>
+			
+
+
+		
+		</section>
+
+<div id="twoimages">
+<div class="get">
+</div>
+<div id="blue">
+<h3 id="ready">Ready to Get Started?</h3>
+<p id ="campus">We offer the largest network of campus-based English language instruction centers in the world.</p>
+<a href="">START YOUR APPLICATION</a><br>
+<a href="">CONTACT A COUNSELOR</a>
+</div>
+</div>
+
+<!-- footer part -->
+<footer>
+		<div class="container">
+			<div class="col-sm-2" id="column">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse0">+</button>
+					<a href="https://www.els.edu/en/Find-ELS-Language-Centers" class="navbar-brand">DESTINATIONS & CENTERS</a>
+				</div>
+			<div class="navbar-collapse0 navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li class="anchor"><a href="https://www.els.edu/en/Find-ELS-Language-Centers?country=US" >United States</a></li>
+					<li  class="anchor"><a href="https://www.els.edu/en/Find-ELS-Language-Centers?country=AUS" >Australia</a></li>
+					<li class="anchor"><a href="https://www.els.edu/en/Find-ELS-Language-Centers?country=CA"  >Canada</a></li>
+					<li class="anchor"><a href="www.els.cn" >China</a></li>
+					<li class="anchor"><a href="https://www.els.edu/en/Find-ELS-Language-Centers?country=IN" >India</a></li>
+					<li class="anchor"><a href="https://www.els.edu.my">Malaysia</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="col-sm-2" id="column1">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse1">+</button>
+				<a href="https://www.els.edu/en/Study-English-for-International-Students" class="navbar-brand">ENGLISH PROGRAMS</a>
+			</div>
+			<div class="navbar-collapse1 navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li><a href="https://www.els.edu/en/Study-English-for-International-Students/Academic-English-Programs" >Academic English</a></li>
+					<li><a href="https://www.els.edu/en/Study-English-for-International-Students/General-English-Programs" >General English</a></li>
+					<li><a href="https://www.els.edu/en/Study-English-for-International-Students/Intensive-Business-English-Program" >Business Communication</a></li>
+					<li><a href="https://www.els.edu/en/Study-English-for-International-Students/English-Language-Summer-Camp">Youth Programs</a></li>
+					<li><a href="https://www.els.edu/en/Study-English-for-International-Students/Testing-and-Test-Preparation" >Testing and Test Preparation Programs</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="col-sm-2" id="column2">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse2">+</button>
+				<a href="https://www.els.edu/en/About-Us" class="navbar-brand">ABOUT US</a>
+			</div>
+			<div class="navbar-collapse2 navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li><a href="https://www.els.edu/en/About-Us/Ask-A-Question" >Ask a Question</a></li>
+					<li><a href="https://recruiting.ultipro.com/ELS1000/JobBoard/b5ba481d-c93e-d76f-5239-494915e0670c">Careers</a></li>
+					<li><a href="https://www.els.edu/en/About-Us/News">News</a></li>
+					<li><a href="https://www.els.edu/download-brochure">Brochures</a></li>
+				</ul>
+			</div>
+		</div>
+			<div class="col-sm-2" id="column3">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse3">+</button>
+					<a href="https://www.els.edu/en/ELS-University-Partner" class="navbar-brand">PARTNER UNIVERSITIES</a>
+				</div>
+				<div class="navbar-collapse3 navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+						<li><a href="https://www.universityguideonline.org/en">UniversitySearch.com</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-sm-2" id="column4">
+				<div class="navbar-header">
+					<a href="https://www.els.edu/MyELS/Login" class="navbar-brand"><span style="color:orange;font-size:20px;">&gt;</span>&nbsp;&nbsp;MY ELS</a>
+				</div>
+			</div>
+				<div class="twitter">
+					
+                   <a href="https://www.facebook.com/els" target=_blank><img   class="fb im" src="facebook.png" alt="facebook"></a>
+               
+                    <a href="https://twitter.com/elscenters" target=_blank><img class="fb im" src="twitter.png" alt="twitter"></a>
+               
+                    <a href="https://www.youtube.com/user/ELSLanguageCenters" target=_blank><img src="youtube.png" class="im" alt="youtube"></a>
+               
+                    <a href="https://plus.google.com/+ELScenters" target=_blank><img src="google.png" class="im" alt="google"></a>
+              
+				</div>
+			</div>
+		
+		<div id="copyrow">
+			<div id="footerpart">
+			<sup>&copy;</sup> Copyright 2017 ELS Educational Services, Inc., a <a id="ber" href="https://www.berlitz.com">Berlitz Company</a>
+			</div>
+			<div id="copy">
+				<a href="https://www.els.edu/en/Accreditation">Accreditation</a>
+				<a href="https://www.els.edu/en/PrivacyPolicy">Privacy Policy</a>
+				<a href="https://www.els.edu/en/TermsOfUse">Terms</a>
+			</div>
+			</div>
+	</footer>
+
+
+</body>
+</html>
